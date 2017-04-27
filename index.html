@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,700|Julius+Sans+One" rel="stylesheet">
+  <title>RegEx Form</title>
+</head>
+<body>
+  <h1>RegEx Form</h1>
+  <section id="form">
+    <form class="validate" action="index.html" method="post">
+      <input type="text" class="input-valid" id="name" pattern="/^([A-Z]{1}[a-zñá-ú]*[\s]?)+$/" required>
+      <input type="text" class="input-valid" id="lastname" pattern="/^([A-Z]{1}[a-zñá-ú]*[\s]?)+$/" required>
+      <input type="text" class="input-valid" id="dni" pattern="/\d{8}$/" required>
+      <input type="date" class="input-valid" id="" pattern="" required>
+      <input type="tel" class="input-valid" id="" pattern="" required>
+      <input type="tel" class="input-valid" id="" pattern="" required>
+      <input type="password" class="input-valid" id="" pattern="" required>
+      <input type="password" class="input-valid" id="" pattern="">
+      <textarea name="name" class="input-valid" id="" rows="8" cols="40"></textarea>
+      <input type="checkbox" name="" value="" class="input-valid" id="accept"> Acepto los Términos y Condiciones.
+      <input type="submit" name="enviar" value="Enviar" class="input-valid" id="button">
+    </form>
+  </section>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
