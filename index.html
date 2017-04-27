@@ -12,14 +12,14 @@
   <h1>RegEx Form</h1>
   <section id="form">
     <form class="validate" action="index.html" method="post">
-      <input type="text" class="input-valid" id="name" pattern="/^([A-Z]{1}[a-zñá-ú]*[\s]?)+$/" required>
-      <input type="text" class="input-valid" id="lastname" pattern="/^([A-Z]{1}[a-zñá-ú]*[\s]?)+$/" required>
-      <input type="text" class="input-valid" id="dni" pattern="/\d{8}$/" required>
+      <input type="text" class="input-valid" id="name" pattern="/^([A-Z]{1}[a-zñá-ú]*[\s]?)+$/" placeholder="Nombres" required>
+      <input type="text" class="input-valid" id="lastname" pattern="/^([A-Z]{1}[a-zñá-ú]*[\s]?)+$/" placeholder="Apellidos"required>
+      <input type="text" class="input-valid" id="dni" pattern="/\d{8}$/" placeholder="DNI" required>
       <input type="date" class="input-valid" id="" pattern="" required>
-      <input type="tel" class="input-valid" id="landline" pattern="[(]?[0-9]{2,3}[)]?[ ]?[0-9]{2,3}[ |-]?[0-9]{4}" required>
-      <input type="tel" class="input-valid" id="cel" pattern="\d{9}" required>
-      <input type="password" class="input-valid" id="" pattern="" required>
-      <input type="password" class="input-valid" id="" pattern="">
+      <input type="tel" class="input-valid" id="landline" pattern="/[(]?[0-9]{2,3}[)]?[ ]?[0-9]{2,3}[ |-]?[0-9]{4}/" placeholder="Teléfono"required>
+      <input type="tel" class="input-valid" id="cel" pattern="\d{9}" placeholder="Celular" required>
+      <input type="password" class="input-valid" id="" pattern=".{6,20}" placeholder="Clave"required>
+      <input type="password" class="input-valid" id="" pattern=".{6,20}" placeholder="Reingrese su clave"required>
       <textarea name="name" class="input-valid" id="" rows="8" cols="40"></textarea>
       <input type="checkbox" name="" value="" class="input-valid" id="accept"> Acepto los Términos y Condiciones.
       <input type="submit" name="enviar" value="Enviar" class="input-valid" id="button">
